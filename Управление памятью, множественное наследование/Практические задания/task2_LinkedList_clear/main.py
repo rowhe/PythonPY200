@@ -1,5 +1,5 @@
 from typing import Iterator, Any, Iterable, Optional
-
+import sys
 from node import Node
 
 
@@ -76,12 +76,16 @@ class LinkedList:
             current_node = current_node.next
 
     def clear(self):
-        ...  # TODO реализовать очистку списка
+        self.head = None
+        self.tail = None
+        self.len = 0 # реализовать очистку списка
 
 
 if __name__ == '__main__':
     ll = LinkedList([1, 2, 3, 4, 5])
     print(ll)
 
-    ll.clear()
-    print(ll)
+    # for node in ll.nodes_iterator():
+    #     print(sys.getrefcount(node))
+    # ll.clear()
+    # print(ll)

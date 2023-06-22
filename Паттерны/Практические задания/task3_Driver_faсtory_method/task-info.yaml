@@ -4,13 +4,13 @@ files:
   visible: true
   placeholders:
   - offset: 94
-    length: 36
+    length: 31
     placeholder_text: '# TODO Реализовать абстрактный класс'
     initial_state:
       length: 36
       offset: 94
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       class DriverFactoryMethod(ABC):
@@ -18,15 +18,15 @@ files:
           @abstractmethod
           def get_driver(cls) -> IStructureDriver:
               ...
-  - offset: 578
-    length: 63
+  - offset: 680
+    length: 92
     placeholder_text: "...  # TODO с помощью фабричного метода инциализировать дра\
       йвер"
     initial_state:
       length: 63
       offset: 578
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: SimpleFileFactoryMethod.get_driver()
   text: |
